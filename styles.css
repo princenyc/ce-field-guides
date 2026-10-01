@@ -357,3 +357,44 @@ img { max-width: 100%; display: block; }
   .ce-nav { display: none; }
   .article-body { font-size: 16.5px; }
 }
+
+/* ---------- HUH? (a CE Field Guides side file) ----------
+   Crimson marks Huh? pieces. Chartreuse stays Field Guide. */
+
+.huh-label {
+  display: inline-block;
+  font-family: var(--display);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1;
+  color: var(--paper);
+  background: var(--crimson);
+  padding: 4px 7px 3px;
+  transform: rotate(-2deg);
+  margin-right: 6px;
+}
+
+/* Index card */
+.index-item.huh {
+  border-left: 3px solid var(--crimson);
+  padding-left: 18px;
+}
+.index-item.huh:hover { padding-left: 28px; }
+.index-item.huh .index-meta { color: #e8a3ae; }
+
+/* Article page band, injected by the publisher */
+.huh-band {
+  background: var(--crimson);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 16px;
+  text-align: center;
+}
+.huh-band .huh-label {
+  background: var(--paper);
+  color: var(--crimson);
+}
